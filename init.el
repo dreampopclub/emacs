@@ -20,11 +20,6 @@
   (mapc 'disable-theme custom-enabled-themes)
     (load-theme theme t))
 
-;; without this projectile find dies.
-(require 'subr-x)
-
-(projectile-global-mode)
-
 ;; Save emacs backup in ~/emacs_backups
 (setq backup-directory-alist '(("" . "~/emacs_backups")))
 
